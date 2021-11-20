@@ -12,12 +12,18 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
+  --main-bg-color: #e0e0e0;
+  --black-color: #000000;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #e0e0e0;
+
+  background-color: var(--main-bg-color);
   color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
@@ -31,8 +37,9 @@ button {
 /* Header */
 .logo-link {
   font-family: Raleway;
-  font-weight: 700;
-  color: #000000;
+  font-style: normal;
+  font-weight: 900;
+  color: var(--black-color);
   text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
@@ -42,7 +49,7 @@ button {
   color: var(--accent-color);
 }
 .logo-link-studio {
-  color: #000000;
+  color: var(--black-color);
 }
 .site-nav .current {
   color: var(--accent-color);
@@ -51,7 +58,6 @@ button {
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -59,16 +65,16 @@ button {
 .header-link:focus {
   color: var(--accent-color);
 }
-.contacts {
+.header-contacts {
   color: var(--secondary-text-color);
   text-decoration: none;
+  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts:hover,
-.contacts:focus {
+.header-contacts:hover,
+.header-contacts:focus {
   color: var(--accent-color);
 }
 
@@ -90,7 +96,6 @@ button {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
-.hero-button:hover,
 .hero-button:focus {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
@@ -99,17 +104,11 @@ button {
   display: none;
 }
 .benefits-tittle {
-  font-weight: 700;
-  font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 .benefits-text {
-  font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 .what-we-do,
@@ -118,7 +117,6 @@ button {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .our-team-fs-name {
@@ -126,14 +124,12 @@ button {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .our-team-profession {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -143,7 +139,6 @@ button {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
 }
@@ -152,8 +147,7 @@ button {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
-.filter,
-.ex-works {
+.filter {
   display: none;
 }
 .ex-works-title {
@@ -166,7 +160,6 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 .ex-works-link {
@@ -177,12 +170,10 @@ button {
 /* Footer*/
 .footer-link {
   font-family: Raleway;
-  font-weight: 700;
-  color: #000000;
+  color: var(--black-color);
   text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 .footer-link-web {
   color: var(--accent-color);
@@ -191,8 +182,19 @@ button {
   color: var(--white-color);
 }
 .footer-text {
-  font-size: 14px;
+  font-style: normal;
   line-height: 1.7;
-  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+.footer-contacts {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
   color: var(--white-color);
 }
